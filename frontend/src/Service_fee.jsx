@@ -39,7 +39,7 @@ function ServiceFee() {
 
           <tr>
             <td><span className="zh">批量型 (最少 20-100 張)</span><br /><span className="en">Bulk (Min. 20-100 cards)</span></td>
-            <td><span className="zh">$30-$100 HKD</span><br /><span className="en"></span></td>
+            <td><span className="zh">$35-$100 HKD</span><br /><span className="en"></span></td>
             <td><span className="zh">$1500 HKD</span><br /><span className="en"></span></td>
             <td><span className="zh">45+ 個工作日</span><br /><span className="en">45+ Business Days</span></td>
           </tr>

@@ -3,7 +3,7 @@ import React from 'react';
 function GradingStandard() {
   return (
     <div className="hero">
-      <img src="/assets/Grading_standard_banner.png" alt="Hero Background" className="hero-bg" style={{marginLeft:'1%',width:'98%',maxHeight:'500px'}}/>
+      {/* <img src="/assets/Grading_standard_banner.png" alt="Hero Background" className="hero-bg" style={{marginLeft:'1%',width:'98%',maxHeight:'500px'}}/> */}
       <div className="hero-content" style={{marginTop:'20px'}}>
         <div className="hero-text">
           <h1>
@@ -59,12 +59,12 @@ function GradingStandard() {
           </span></td>
         </tr>
         <tr>
-          <td><span className="zh">10A-</span><br /><span className="en">Mint</span></td>
+          <td><span className="zh">10A-</span><br /><span className="en">Mint+</span></td>
           <td><span className="zh">
             卡牌四角完好，僅容許細微的磨損，邊緣或可見微小瑕疵。卡面須保有原始光澤，但准許存在少量污漬、微小污點或輕微缺陷。
           </span><br />
           <span className="en">
-             Mint (10A-): A sharp card with only tiny flaws. Might have minor edge wear or a single surface speck. 
+             Mint+ (10A-): A sharp card with only tiny flaws. Might have minor edge wear or a single surface speck. 
           </span></td>
         </tr>
         <tr>

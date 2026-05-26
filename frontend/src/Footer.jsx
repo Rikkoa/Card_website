@@ -16,7 +16,7 @@ function Footer() {
           </div>
 
           {/* 社交媒體 icon */}
-          <div className="social-icons">
+          {/* <div className="social-icons">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
@@ -26,7 +26,7 @@ function Footer() {
             <a href="https://x.com" target="_blank" rel="noopener noreferrer">
               <FaXTwitter />
             </a>
-          </div>
+          </div> */}
           <p className="copyright">
             © {currentYear} HKG CARDZ. 保留所有權利.
           </p>

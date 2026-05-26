@@ -3,13 +3,15 @@ import React from 'react';
 function Hero() {
   return (
     <div className="hero" >
+      <img src="/assets/home_banner.jpg" alt="Hero Background" className="hero-bg" style={{marginLeft:'1%',width:'98%',maxHeight:'500px'}}/>
+      <br />
       <div className="hero-content">
-        <div className="hero-image">
+        {/* <div className="hero-image">
           <img src="/assets/card1.jpg" alt="banner" className="hero-pokemon" />
           <div className="hero-badge">
             <span className="badge-text">專業查分</span>
           </div>
-        </div>
+        </div> */}
         <div className="hero-text">
           <h1>
             <span className="text-zh">專業查分，守護你的收藏價值</span>

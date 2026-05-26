@@ -3,11 +3,11 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // 環境變數可用 getenv() 或直接寫死
-$host = getenv('DB_HOST') ?: 'localhost';
-$port = getenv('DB_PORT') ?: '3306';
-$dbname = getenv('DB_NAME') ?: 'demo183101';
-$user = getenv('DB_USER') ?: 'demo1831';
-$password = getenv('DB_PASSWORD') ?: 'Mfv@c7e9';
+$host = 'localhost';
+$port = '3306';
+$dbname = 'hkgcardz01';
+$user = 'hkgcardz';
+$password = 'Abc@123456';
 
 try {
     $pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4", $user, $password, [

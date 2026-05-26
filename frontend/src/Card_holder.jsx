@@ -3,7 +3,7 @@ import React from 'react';
 function CardHolder() {
   return (
     <div className="hero">
-      <img src="/assets/card_holder_banner.png" alt="Hero Background" className="hero-bg" style={{marginLeft:'1%',width:'98%',maxHeight:'500px'}}/>
+      <img src="/assets/card_holder_banner.png" alt="Hero Background" className="hero-bg" style={{marginLeft:'1%',width:'98%',maxHeight:'600px'}}/>
       <div className="hero-content" style={{marginTop:'20px'}}>
         <div className="hero-text">
           <h1>
@@ -26,6 +26,8 @@ function CardHolder() {
           </p>
         </div>
       </div>
+      <br />
+      <img src="/assets/card_holder_footer.jpg" alt="Hero Background" className="hero-bg" style={{marginLeft:'1%',width:'98%',maxHeight:'550px'}}/>
     </div>
   );
 }

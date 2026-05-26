@@ -40,8 +40,7 @@ function Home() {
 
   return (
     <div id="home" style={{scrollMarginTop: '90px'}}>
-      {/* <img src="/assets/home_banner.jpg" alt="Hero Background" className="hero-bg" style={{marginLeft:'1%',width:'98%',maxHeight:'800px'}}/> */}
-      <div className="container">
+        <div className="container">
         <Hero />
         <Features />
         <Plugins />
