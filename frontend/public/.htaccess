@@ -6,6 +6,10 @@ DirectoryIndex index.html
 # 禁止顯示目錄列表
 Options -Indexes
 
+# HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # 禁止存取隱藏檔案 (.git, .env 等)
 RewriteRule (^|/)\. - [F]
 

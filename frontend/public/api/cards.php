@@ -29,9 +29,27 @@ elseif ($method === 'GET' && isset($_GET['search'])) {
     // 統計同類型卡牌
     $stats = $pdo->prepare("
         SELECT SUM(card_quantity) as total_count,
-               SUM(CASE WHEN card_score > ? THEN card_quantity END) as higher_count,
-               SUM(CASE WHEN card_score = ? THEN card_quantity END) as same_count
-        FROM cards WHERE card_name = ?
+            SUM(CASE WHEN card_score > ? THEN card_quantity END) as higher_count,
+            SUM(CASE WHEN card_score = ? THEN card_quantity END) as same_count,
+            MAX(card_name) as display_name
+        FROM cards 
+        WHERE LOWER(
+                REPLACE(
+                    REPLACE(
+                        REPLACE(TRIM(card_name), ' ', ''),
+                        '\n', ''
+                    ),
+                    '\r', ''
+                )
+            ) = LOWER(
+                REPLACE(
+                    REPLACE(
+                        REPLACE(TRIM(?), ' ', ''),
+                        '\n', ''
+                    ),
+                    '\r', ''
+                )
+            )
     ");
     $stats->execute([$card['card_score'], $card['card_score'], $card['card_name']]);
     $statsData = $stats->fetch();
@@ -71,7 +89,23 @@ elseif ($method === 'GET' && isset($_GET['search'])) {
             SELECT ROUND(card_score, 1) AS card_score,
                    SUM(card_quantity) AS count
             FROM cards
-            WHERE card_name = ?
+            WHERE LOWER(
+                REPLACE(
+                    REPLACE(
+                        REPLACE(TRIM(card_name), ' ', ''),
+                        '\n', ''
+                    ),
+                    '\r', ''
+                )
+            ) = LOWER(
+                REPLACE(
+                    REPLACE(
+                        REPLACE(TRIM(?), ' ', ''),
+                        '\n', ''
+                    ),
+                    '\r', ''
+                )
+            )
             GROUP BY ROUND(card_score, 1)
             ORDER BY card_score DESC
         ";
@@ -87,6 +121,56 @@ elseif ($method === 'GET' && isset($_GET['search'])) {
     }
 }
 
+elseif (isset($_GET['dropdown'])) {
+    if ($method === 'GET') {
+        // 取得所有 dropdown options
+        $stmt = $pdo->query("SELECT * FROM dropdown_options ORDER BY id ASC");
+        echo json_encode($stmt->fetchAll(PDO::FETCH_ASSOC));
+    }
+
+    elseif ($method === 'POST') {
+    $stmt = $pdo->prepare("INSERT INTO dropdown_options (score, description) VALUES (?, ?)");
+    $stmt->execute([$input['score'], $input['description']]);
+
+    $rows = $pdo->query("SELECT * FROM dropdown_options ORDER BY id ASC")->fetchAll(PDO::FETCH_ASSOC);
+    echo json_encode($rows);
+    }
+
+    elseif ($method === 'PUT') {
+        parse_str($_SERVER['QUERY_STRING'], $params);
+        $id = $params['id'] ?? null;
+
+        if (!$id) {
+            http_response_code(400);
+            echo json_encode([]);
+            exit;
+        }
+
+        $stmt = $pdo->prepare("UPDATE dropdown_options SET score=?, description=?, updated_at=NOW() WHERE id=?");
+        $stmt->execute([$input['score'], $input['description'], $id]);
+
+        $rows = $pdo->query("SELECT * FROM dropdown_options ORDER BY id ASC")->fetchAll(PDO::FETCH_ASSOC);
+        echo json_encode($rows);
+    }
+
+    elseif ($method === 'DELETE') {
+        parse_str($_SERVER['QUERY_STRING'], $params);
+        $id = $params['id'] ?? null;
+
+        if (!$id) {
+            http_response_code(400);
+            echo json_encode([]);
+            exit;
+        }
+
+        $stmt = $pdo->prepare("DELETE FROM dropdown_options WHERE id=?");
+        $stmt->execute([$id]);
+
+        $rows = $pdo->query("SELECT * FROM dropdown_options ORDER BY id ASC")->fetchAll(PDO::FETCH_ASSOC);
+        echo json_encode($rows);
+    }
+
+}
 elseif ($method === 'POST') {
     // 添加卡牌
     $stmt = $pdo->prepare("

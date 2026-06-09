@@ -43,10 +43,10 @@ function GradingStandard() {
         <tr>
           <td><span className="zh">10 ⭐️⭐</span><br /><span className="en">Gem Mint</span></td>
           <td><span className="zh">
-            全球僅限十張：10 ⭐️⭐️此等級卡牌沒有任何肉眼可見的瑕疵。置中度（Centering）表現為完美的 50/50，且具備無暇的色澤與精準的校準。所有獲評為  HKG CARDZ 10 ⭐️⭐️ 等級的卡牌，均會獲得專屬的  HKG CARDZ 10 ⭐️⭐️ 特殊標籤。
+            全球僅限五張：10 ⭐️⭐️此等級卡牌沒有任何肉眼可見的瑕疵。置中度（Centering）表現為完美的 50/50，且具備無暇的色澤與精準的校準。所有獲評為  HKG CARDZ 10 ⭐️⭐️ 等級的卡牌，均會獲得專屬的  HKG CARDZ 10 ⭐️⭐️ 特殊標籤。
           </span><br />
           <span className="en">
-            10 ⭐️⭐️: Virtually perfect. Features 50/50 centering, flawless color, and zero visible defects. Earns a unique "10 ⭐️ ⭐️" label.
+            10 ⭐️⭐️: Virtually perfect. Features 50/50 centering, flawless color, and zero visible defects. Earns a unique "10 ⭐️ ⭐️" label.Limited to 5 worldwide.
           </span></td>
         </tr>
         <tr>
