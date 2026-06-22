@@ -16,13 +16,15 @@ function About_us() {
               我們是一家源自香港、面向全球的專業卡牌評級機構。有別於其他涉獵廣泛的評級公司，我們是全球唯一「專為寶可夢（Pokémon）卡牌服務」的專屬評級中心。正因這份專一，我們追求極致；源於對卡牌的熱愛，我們成就頂尖專業。
 <br /><br />集團榮譽<br />
 * 「開心企業」標誌：榮獲香港提升快樂指數基金頒發。<br />
-* ESG 嘉許獎項：與香港中華廠商聯合會簽署《ESG約章》並榮獲嘉許。        
+* ESG 嘉許獎項：與香港中華廠商聯合會簽署《ESG約章》並榮獲嘉許。  <br />
+* 「貼心企業」嘉許獎項：榮獲GS1 Hong Kong 頒發，表揚企業實踐優質消費者服務及秉持誠信。      
             </span>
             <span className="text-en">
               Based in Hong Kong with a global reach, we are a premier professional trading card grading authority. Distinct from multi-category grading companies, we stand as the world’s only grading center exclusively dedicated to Pokémon cards. Our singular focus drives our commitment to perfection, and our passion guarantees unparalleled professional expertise.
 <br /><br />Corporate Recognitions<br />
 * Happy Company: Awarded by the Promoting Happiness Index Foundation.<br />
-* ESG Pledge & Award: Officially signed the ESG Charter and commended by The Chinese Manufacturers' Association of Hong Kong.
+* ESG Pledge & Award: Officially signed the ESG Charter and commended by The Chinese Manufacturers' Association of Hong Kong.<br />
+* Consumer Caring Scheme Award: Presented by GS1 Hong Kong in recognition of our commitment to delivering consumer-centric services and upholding the highest standards of business integrity.
             </span>
           </p>
         </div>

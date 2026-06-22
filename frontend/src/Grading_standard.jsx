@@ -34,7 +34,7 @@ function GradingStandard() {
         <tr>
           <td><span className="zh">10⭐️⭐️⭐</span><br /><span className="en">Gem Mint</span></td>
           <td><span className="zh">
-            此等級卡牌完美無瑕。置中度（Centering）表現為完美的 50/50，且具備無暇的色澤與精準的校準。所有獲評為 HKG CARDZ 10 ⭐️⭐️⭐️ 等級的卡牌，均會獲得專屬的 HKG CARDZ 10 ⭐️⭐️⭐️特殊標籤。全球僅限三張：三星評級 (3-Star) 代表住無懈可擊嘅完美。我哋對每一張寶可夢卡進行極限審核，確保同款卡牌喺全球範圍內，最多只會有三張獲得呢份榮耀。極致稀有，定義收藏新高度。
+            此等級卡牌完美無瑕。置中度（Centering）表現為完美的 50/50，且具備無暇的色澤與精準的校準。所有獲評為 HKG CARDZ 10 ⭐️⭐️⭐️ 等級的卡牌，均會獲得專屬的 HKG CARDZ 10 ⭐️⭐️⭐️特殊標籤。全球僅限 3 張：三星評級 (3-Star) 代表住無懈可擊嘅完美。我哋對每一張寶可夢卡進行極限審核，確保同款卡牌喺全球範圍內，最多只會有三張獲得呢份榮耀。極致稀有，定義收藏新高度。
           </span><br />
           <span className="en">
             10 ⭐️⭐️⭐️: Perfect flawless. Features 50/50 centering, flawless color, and zero visible defects. Earns a unique "10 ⭐️⭐️⭐️" label.Limited to 3 Worldwide: The 10 ⭐️⭐️⭐️ Grade represents flawless perfection. We apply extreme scrutiny to every Pokémon card, ensuring this honor is reserved for only three copies of the same card globally. Your collection, redefined by ultimate scarcity.
@@ -43,7 +43,7 @@ function GradingStandard() {
         <tr>
           <td><span className="zh">10 ⭐️⭐</span><br /><span className="en">Gem Mint</span></td>
           <td><span className="zh">
-            全球僅限五張：10 ⭐️⭐️此等級卡牌沒有任何肉眼可見的瑕疵。置中度（Centering）表現為完美的 50/50，且具備無暇的色澤與精準的校準。所有獲評為  HKG CARDZ 10 ⭐️⭐️ 等級的卡牌，均會獲得專屬的  HKG CARDZ 10 ⭐️⭐️ 特殊標籤。
+            全球僅限 5 張：10 ⭐️⭐️此等級卡牌沒有任何肉眼可見的瑕疵。置中度（Centering）表現為完美的 50/50，且具備無暇的色澤與精準的校準。所有獲評為  HKG CARDZ 10 ⭐️⭐️ 等級的卡牌，均會獲得專屬的  HKG CARDZ 10 ⭐️⭐️ 特殊標籤。
           </span><br />
           <span className="en">
             10 ⭐️⭐️: Virtually perfect. Features 50/50 centering, flawless color, and zero visible defects. Earns a unique "10 ⭐️ ⭐️" label.Limited to 5 worldwide.
